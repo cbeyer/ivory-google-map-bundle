@@ -22,7 +22,7 @@
         "ivory/google-map": "dev-sf6"
     },
     "require-dev": {
-        "ivory/serializer-bundle": "^1.0",
+        "ivory/serializer-bundle": "dev-sf6",
         "friendsofphp/php-cs-fixer": "^2.0",
         "php-http/cache-plugin": "^1.4",
         "php-http/guzzle6-adapter": "^1.0",
