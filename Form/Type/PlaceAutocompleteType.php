@@ -107,7 +107,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getParent()
+    public function getParent(): ?string
     {
         return method_exists(AbstractType::class, 'getBlockPrefix') ? TextType::class : 'text';
     }
@@ -115,7 +115,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getBlockPrefix()
+    public function getBlockPrefix(): ?string
     {
         return 'place_autocomplete';
     }
@@ -123,7 +123,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getName(): ?string
     {
         return $this->getBlockPrefix();
     }
