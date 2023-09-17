@@ -55,7 +55,7 @@ class RegisterHelperListenerPass implements CompilerPassInterface
     /**
      * {@inheritdoc}
      */
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
         if (!class_exists(ServiceClosureArgument::class)) {
             foreach (self::$helpers as $helper) {
