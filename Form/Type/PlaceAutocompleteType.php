@@ -28,7 +28,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function buildForm(FormBuilderInterface $builder, array $options)
+    public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $autocomplete = new Autocomplete();
 
@@ -63,7 +63,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function finishView(FormView $view, FormInterface $form, array $options)
+    public function finishView(FormView $view, FormInterface $form, array $options): void
     {
         $autocomplete = $form->getConfig()->getAttribute('autocomplete');
         $autocomplete->setInputId($view->vars['id']);
@@ -77,7 +77,7 @@ class PlaceAutocompleteType extends AbstractType
     /**
      * {@inheritdoc}
      */
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver
             ->setDefaults([
